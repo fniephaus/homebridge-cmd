@@ -64,7 +64,7 @@ CmdAccessory.prototype = {
 			.setCharacteristic(Characteristic.Model, "cmd Model")
 			.setCharacteristic(Characteristic.SerialNumber, "cmd Serial Number");
 
-		var switchService = new Service.Switch(this.name);
+		var switchService = new Service.Lightbulb(this.name);
 
 		switchService
 			.getCharacteristic(Characteristic.On)
